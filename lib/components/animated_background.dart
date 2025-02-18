@@ -2,6 +2,14 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+class AnimatedBackgroundWidget extends StatefulWidget {
+  const AnimatedBackgroundWidget({super.key});
+
+  @override
+  State<AnimatedBackgroundWidget> createState() =>
+      _AnimatedBackgroundWidgetState();
+}
+
 class _AnimatedBackgroundWidgetState extends State<AnimatedBackgroundWidget>
     with TickerProviderStateMixin {
   late AnimationController _controller;
@@ -57,12 +65,4 @@ class _AnimatedBackgroundWidgetState extends State<AnimatedBackgroundWidget>
       ),
     );
   }
-}
-
-class AnimatedBackgroundWidget extends StatefulWidget {
-  const AnimatedBackgroundWidget({super.key});
-
-  @override
-  _AnimatedBackgroundWidgetState createState() =>
-      _AnimatedBackgroundWidgetState();
 }

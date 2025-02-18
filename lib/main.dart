@@ -1,4 +1,4 @@
-import 'package:amor/screens/home_screen.dart';
+import 'package:amor/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "Mor",
-      routes: {'/': (context) => HomeScreen()},
+      routes: {'/': (context) => HomePage()},
     );
   }
 }

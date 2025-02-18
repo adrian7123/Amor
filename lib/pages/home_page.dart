@@ -1,17 +1,17 @@
 import 'dart:math';
 
 import 'package:amor/components/animated_background.dart';
-import 'package:amor/components/frases.dart';
+import 'package:amor/shared/constants.dart';
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomePageState extends State<HomePage> {
   Random rand = Random();
 
   List<String> frases = Frases.frases;
@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
         body: Stack(
           children: <Widget>[
-            // Realiza a Animação Atras do texto
+            // Realiza a Animação Atrás do texto
             AnimatedBackgroundWidget(),
 
             // Texto
